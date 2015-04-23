@@ -6,7 +6,7 @@ I used this to control my WeMo lights prior to Amazon releasing WeMo support but
 
 ## Configuration
 
-There are a number of external services used in this example so configuration is non-trivial.  You will need to rename `config\config_template.js` to `config\config.js`.
+There are a number of external services used in this example so configuration is non-trivial.  You will need to rename `cloud\config_template.js` to `cloud\config.js`.
 
 ### Parse
 
