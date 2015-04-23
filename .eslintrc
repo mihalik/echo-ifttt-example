@@ -1,0 +1,14 @@
+{
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"globals": {
+		"React": true,
+		"Parse": true
+	},
+	"rules": {
+		"quotes": 0,
+		"strict": [ 2, "never" ]
+	}
+}
