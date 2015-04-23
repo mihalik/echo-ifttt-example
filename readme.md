@@ -64,4 +64,9 @@ You need to configure the application to send emails from you in `cloud\config.j
 
 ![](https://cldup.com/1AqCmVFL8l.png)
 
-The tags that are passed through to IFTTT by the application are configured in `cloud\config.js` with the `supportedActions` options.  If you set `supportedActions` to `false` it will pass through all actions.  This example will take any phrase, lowercase it and remove spaces to use as a tag for IFTTT.  So something like "turn off" will pass through as "#turnoff".
+The tags that are passed through to IFTTT by the application are configured in `cloud\config.js` with the `supportedActions` options.  If you set `supportedActions` to `null` it will pass through all actions.  This example will take any phrase, lowercase it and remove spaces to use as a tag for IFTTT.  So something like "turn off" will pass through as "#turnoff".  With a bit of modification, you could support a tag and body for more complex IFTTT actions.
+
+## TODO
+
+This application does not validate the signature for the request to validate that it is actually from the Echo Cloud Service.  This is security by obscurity right now and signature validate needs to be added to any real application.
+
